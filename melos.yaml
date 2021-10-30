@@ -1,0 +1,7 @@
+name: arb_dart
+
+packages:
+  - packages/**
+
+scripts:
+  code_gen: melos exec -c 5 --depends-on="build_runner" --no-flutter -- "dart run build_runner watch --delete-conflicting-outputs"
